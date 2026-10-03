@@ -73,9 +73,12 @@ nav a {
 
 }
 
-nav a:hover,
-.active { 
+nav a:hover { 
   color: #e6edf3;
+}
+
+.active {
+  color: #ccff00;
 }
 
 nav a:hover::before,
@@ -91,7 +94,9 @@ nav a.active::before {
   text-transform: uppercase;
 }
 
-.social a:hover { color: aquamarine; }
+.social a:hover { 
+  color: #ffffff;
+ }
 
 main {
   flex: 1;
