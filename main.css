@@ -6,11 +6,18 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 { margin: 0; color: aquamarine; }
-a { color: inherit; text-decoration: none; }
-strong { color: #e6edf3; font-weight: 600; }
+h1, h2, h3, h4 { margin: 0;
+  color: aquamarine;
+}
 
-/* Two columns */
+a { color: inherit;
+  text-decoration: none;
+}
+
+strong { color: #e6edf3;
+  font-weight: 600;
+}
+
 .layout {
   max-width: 1400px;
   margin: 0 auto;
@@ -19,7 +26,6 @@ strong { color: #e6edf3; font-weight: 600; }
   gap: 4rem;
 }
 
-/* Left column: stays in view while the right side scrolls */
 header {
   position: sticky;
   top: 0;
@@ -32,9 +38,20 @@ header {
   justify-content: space-between;
 }
 
-h1 { font-size: 2.6rem; line-height: 1.1; font-weight: 700; }
-h2 { font-size: 1.1rem; font-weight: 500; margin-top: 0.75rem; }
-.tagline { max-width: 18rem; margin-top: 1rem; }
+h1 { 
+  font-size: 2.6rem; 
+  line-height: 1.1;
+  font-weight: 700;
+}
+h2 { 
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+.tagline { max-width: 18rem;
+  margin-top: 1rem;
+}
 
 nav {
   display: flex;
@@ -51,24 +68,24 @@ nav a {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #5d6f8a;
-}
-
-nav a::before {
-  content: "";
-  width: 2rem;
-  height: 1px;
-  background: currentColor;
-  transition: width 0.2s;
+  color: aquamarine;
 }
 
 nav a:hover,
-nav a.active { color: #e6edf3; }
+nav a.active { 
+  color: #e6edf3; 
+}
 
 nav a:hover::before,
-nav a.active::before { width: 4rem; }
+nav a.active::before { 
+  width: 4rem; 
+}
 
-.social { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+.social { display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem; 
+}
+
 .social a:hover { color: aquamarine; }
 
 /* Right column */
@@ -86,7 +103,6 @@ section { margin-bottom: 6rem; }
   margin-bottom: 2rem;
 }
 
-/* Entries: date on the left, content on the right */
 .entry {
   display: grid;
   grid-template-columns: 8rem 1fr;
@@ -106,7 +122,6 @@ section { margin-bottom: 6rem; }
 .entry h4 a:hover { color: aquamarine; }
 .entry p { font-size: 0.9rem; margin: 0.5rem 0 1rem; }
 
-/* Pill tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -134,7 +149,7 @@ section { margin-bottom: 6rem; }
 
 main {
   width: 60%;
-  padding: 6rem 0 6rem 4rem;               /* add left padding so text isn't touching the line */
+  padding: 6rem 0 6rem 4rem;
   border-left: .5px solid rgb(75, 75, 75);
 }
 
@@ -152,5 +167,25 @@ p {
   text-align: center;
   min-height: 150px;
   background-color: rgb(37, 37, 37);
+  border-radius: 8px;
+  font-size: 20px;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(37, 37, 37, 0.505);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+details a {
+  margin-left: 2rem;
+}
+
+button {
+  width: 10%;
+  align-self: center;
+  text-align: center;
+  padding: 5px;
+}
